@@ -1,81 +1,9 @@
-mixed-port: 7891
+mixed-port: 7890
 allow-lan: true
 mode: rule
 log-level: info
 
 proxies:
-
- - name: 🇺🇸 美国01
-   type: mieru
-   server: testus.cdnazuremicrosoft.com
-   port: 443
-   username: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   password: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   transport: TCP
-   udp: true
-
- - name: 🇺🇸 美国02
-   type: mieru
-   server: box.us.cdnazuremicrosoft.com
-   port: 443
-   username: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   password: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   transport: TCP
-   udp: true
-
- - name: 🇺🇸 美国03
-   type: mieru
-   server: us.m.cdnazuremicrosoft.com
-   port: 443
-   username: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   password: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   transport: TCP
-   udp: true
-
- - name: 🇭🇰 香港01
-   type: mieru
-   server: hk.cdn.games.cdnazuremicrosoft.com
-   port: 443
-   username: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   password: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   transport: TCP
-   udp: true
-
- - name: 🇭🇰 香港02
-   type: mieru
-   server: boxhk.cdnazuremicrosoft.com
-   port: 65535
-   username: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   password: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   transport: TCP
-   udp: true
-
- - name: 🇭🇰 香港03
-   type: mieru
-   server: hk.box.cdnazuremicrosoft.com
-   port: 8443
-   username: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   password: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   transport: TCP
-   udp: true
-
- - name: 🇯🇵 日本01
-   type: mieru
-   server: jp1.cdn.games.cdnazuremicrosoft.com
-   port: 3389
-   username: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   password: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   transport: TCP
-   udp: true
-
- - name: 🇸🇬 新加坡01
-   type: mieru
-   server: sg.index.cdnazuremicrosoft.com
-   port: 443
-   username: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   password: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
-   transport: TCP
-   udp: true
 
  - name: 🇭🇰 lite-香港-01
    type: vless
@@ -86,7 +14,7 @@ proxies:
    udp: true
    tls: true
    flow: xtls-rprx-vision
-   servername: a1.awstatic.com
+   servername: a1.awsstatic.com
    client-fingerprint: edge
    reality-opts:
      public-key: UHDFYA5r8aHTrmbisShLwz7qk1jKFiVa1dWMWxvPrBU
@@ -119,7 +47,7 @@ proxies:
    servername: media.amazonwebservices.com
    client-fingerprint: chrome
    reality-opts:
-     public-key: gqA2TvXO8C-c7RjuqDOh69mdE-SsIWA13PMGdbau3Y
+     public-key: gqA2TvXO8C-c7RjuqDOh69mdE-SsIWA13PPMGdbau3Y
      short-id: 2d674677cf98d138
 
  - name: 🇭🇰 pro-香港-01
@@ -230,7 +158,7 @@ proxies:
  - name: 🇺🇸 pro-美国01
    type: vless
    server: 60019.sdwan.digitaldashcloud.com
-   port: 6075
+   port: 60775
    uuid: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
    network: tcp
    udp: true
@@ -245,7 +173,7 @@ proxies:
  - name: 🇺🇸 pro-美国02
    type: vless
    server: 38823.sdwan.digitaldashcloud.com
-   port: 6076
+   port: 60776
    uuid: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
    network: tcp
    udp: true
@@ -260,14 +188,14 @@ proxies:
  - name: 🇺🇸 pro-美国03
    type: vless
    server: 03190.sdwan.digitaldashcloud.com
-   port: 6077
+   port: 60777
    uuid: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
    network: tcp
    udp: true
    tls: true
    flow: xtls-rprx-vision
    servername: api.adidas.com
-   client-fingerprint: q
+   client-fingerprint: qq
    reality-opts:
      public-key: auZ3lOH__9P934nW11MtEbDIbj6Bwdb9FxtXec2m-jI
      short-id: 796ab5b5f7
@@ -275,7 +203,7 @@ proxies:
  - name: 🇺🇸 pro-美国04
    type: vless
    server: 09310.sdwan.digitaldashcloud.com
-   port: 6078
+   port: 60778
    uuid: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
    network: tcp
    udp: true
@@ -297,7 +225,7 @@ proxies:
    tls: true
    flow: xtls-rprx-vision
    servername: www.amazon.pl
-   client-fingerprint: q
+   client-fingerprint: qq
    reality-opts:
      public-key: akzjfR3Y7CMRDWghnRHZUrnDQM9YPxCrlWf_OTy-UBk
      short-id: 056f7e4447494352
@@ -312,7 +240,7 @@ proxies:
    tls: true
    flow: xtls-rprx-vision
    servername: www.amazon.sa
-   client-fingerprint: q
+   client-fingerprint: qq
    reality-opts:
      public-key: xn9xHR09jpqwiT2cCqpBiCV7gzTNwueRpPXWMHnFxAk
      short-id: dad895fa4e063743
@@ -344,7 +272,7 @@ proxies:
    servername: api.adidas.com
    client-fingerprint: chrome
    reality-opts:
-     public-key: 0soGDTguByd3I9e2nLuzkw5BOHELZ_AHDkA0Zx3JRA
+     public-key: 0soGDTguByd3I9e2nLuzkw5BOHELZ_AHHDkA0Zx3JRA
      short-id: f3f70ca767
 
  - name: 🇸🇬 pro-新加坡03
@@ -379,7 +307,7 @@ proxies:
 
  - name: 🇯🇵 lite-日本01
    type: vless
-   server: 0557.cdn.digitaldashcloud.com
+   server: 05557.cdn.digitaldashcloud.com
    port: 5416
    uuid: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
    network: tcp
@@ -390,7 +318,7 @@ proxies:
    client-fingerprint: chrome
    reality-opts:
      public-key: L8AyFpfY49Dl2_41mrO0iXLIEkzfeMYFsmUxLyDp8HM
-     short-id: b210b2b22394feb
+     short-id: b2100b2b22394feb
 
  - name: 🇯🇵 lite-日本02
    type: vless
@@ -450,7 +378,7 @@ proxies:
    client-fingerprint: edge
    reality-opts:
      public-key: 0bnOmyL5CieS4gqa_uuU4O6NWT0evS5DUqrhd-fc8CU
-     short-id: 946e7ab2620c783
+     short-id: 9466e7ab2620c783
 
  - name: 🇹🇼 lite-台湾02
    type: vless
@@ -479,19 +407,19 @@ proxies:
    servername: api.adidas.com
    client-fingerprint: ios
    reality-opts:
-     public-key: qb-vrDIPSrFIithw497zM-LmGUEcTo-dqAjhHi6kyY
+     public-key: qqb-vrDIPSrFIithw497zM-LmGUEcTo-dqAjhHi6kyY
      short-id: f810
 
  - name: 🇬🇧 lite-英国01
    type: vless
    server: 62390.cdn.digitaldashcloud.com
-   port: 543
+   port: 5433
    uuid: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
    network: tcp
    udp: true
    tls: true
    flow: xtls-rprx-vision
-   servername: www.ero.com
+   servername: www.eero.com
    client-fingerprint: ios
    reality-opts:
      public-key: opfWsEmt_uW07IFCcJ9AttHVWGypIDYLOJOuiubZJ1I
@@ -499,7 +427,7 @@ proxies:
 
  - name: 🇬🇧 pro-英国01
    type: vless
-   server: 434.sdwan.digitaldashcloud.com
+   server: 43434.sdwan.digitaldashcloud.com
    port: 5456
    uuid: 5d14cd5c-16ab-4df3-9704-86ca24e5c0a9
    network: tcp
@@ -534,14 +462,6 @@ proxy-groups:
    url: http://www.gstatic.com/generate_204
    interval: 300
    proxies:
-   - 🇺🇸 美国01
-   - 🇺🇸 美国02
-   - 🇺🇸 美国03
-   - 🇭🇰 香港01
-   - 🇭🇰 香港02
-   - 🇭🇰 香港03
-   - 🇯🇵 日本01
-   - 🇸🇬 新加坡01
    - 🇭🇰 lite-香港-01
    - 🇭🇰 lite-香港-02
    - 🇭🇰 lite-香港-03
@@ -577,14 +497,6 @@ proxy-groups:
    type: select
    proxies:
    - 🚀 自动选择
-   - 🇺🇸 美国01
-   - 🇺🇸 美国02
-   - 🇺🇸 美国03
-   - 🇭🇰 香港01
-   - 🇭🇰 香港02
-   - 🇭🇰 香港03
-   - 🇯🇵 日本01
-   - 🇸🇬 新加坡01
    - 🇭🇰 lite-香港-01
    - 🇭🇰 lite-香港-02
    - 🇭🇰 lite-香港-03
