@@ -5,78 +5,6 @@ log-level: info
 
 proxies:
 
- - name: 🇺🇸 美国01
-   type: mieru
-   server: testus.cdnazuremicrosoft.com
-   port: 443
-   username: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   password: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   transport: TCP
-   udp: true
-
- - name: 🇺🇸 美国02
-   type: mieru
-   server: box.us.cdnazuremicrosoft.com
-   port: 443
-   username: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   password: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   transport: TCP
-   udp: true
-
- - name: 🇺🇸 美国03
-   type: mieru
-   server: us.m.cdnazuremicrosoft.com
-   port: 443
-   username: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   password: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   transport: TCP
-   udp: true
-
- - name: 🇭🇰 香港01
-   type: mieru
-   server: hk.cdn.games.cdnazuremicrosoft.com
-   port: 443
-   username: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   password: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   transport: TCP
-   udp: true
-
- - name: 🇭🇰 香港02
-   type: mieru
-   server: boxhk.cdnazuremicrosoft.com
-   port: 65535
-   username: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   password: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   transport: TCP
-   udp: true
-
- - name: 🇭🇰 香港03
-   type: mieru
-   server: hk.box.cdnazuremicrosoft.com
-   port: 8443
-   username: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   password: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   transport: TCP
-   udp: true
-
- - name: 🇯🇵 日本01
-   type: mieru
-   server: jp1.cdn.games.cdnazuremicrosoft.com
-   port: 3389
-   username: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   password: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   transport: TCP
-   udp: true
-
- - name: 🇸🇬 新加坡01
-   type: mieru
-   server: sg.index.cdnazuremicrosoft.com
-   port: 443
-   username: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   password: d760b4f8-76f8-41ed-a49d-c24282fd3312
-   transport: TCP
-   udp: true
-
  - name: 🇭🇰 lite-香港-01
    type: vless
    server: 02726.cdn.digitaldashcloud.com
@@ -489,14 +417,6 @@ proxy-groups:
    url: http://www.gstatic.com/generate_204
    interval: 300
    proxies:
-   - 🇺🇸 美国01
-   - 🇺🇸 美国02
-   - 🇺🇸 美国03
-   - 🇭🇰 香港01
-   - 🇭🇰 香港02
-   - 🇭🇰 香港03
-   - 🇯🇵 日本01
-   - 🇸🇬 新加坡01
    - 🇭🇰 lite-香港-01
    - 🇭🇰 lite-香港-02
    - 🇭🇰 lite-香港-03
@@ -529,14 +449,6 @@ proxy-groups:
    type: select
    proxies:
    - 🚀 自动选择
-   - 🇺🇸 美国01
-   - 🇺🇸 美国02
-   - 🇺🇸 美国03
-   - 🇭🇰 香港01
-   - 🇭🇰 香港02
-   - 🇭🇰 香港03
-   - 🇯🇵 日本01
-   - 🇸🇬 新加坡01
    - 🇭🇰 lite-香港-01
    - 🇭🇰 lite-香港-02
    - 🇭🇰 lite-香港-03
